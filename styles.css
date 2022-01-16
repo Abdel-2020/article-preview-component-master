@@ -3,7 +3,7 @@
 
 /*Colour Variables*/
 
-:root{
+:root {
     --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
     --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
     --Grayish-Blue: hsl(212, 23%, 69%);
@@ -11,31 +11,119 @@
 }
 
 /*Reset*/
-*{
+* {
     box-sizing: border-box;
     padding: 0pc;
-    margin:0px;
+    margin: 0px;
 }
 
 
 /*General Styling*/
 
-body{
+body {
     background-color: var(--Light-Grayish-Blue);
     font-family: "Manrope", sans-serif;
 }
 
-p{
-    font-size: 12px;
-    color:var(--Desaturated-Dark-Blue);
+.profile-name {
+    font-size: 14px;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
 }
 
-.card{
+
+.profile-date {
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 13px;
+}
+
+
+p {
+    font-size: 13px;
+    color: var(--Desaturated-Dark-Blue);
+    line-height: 1.4rem;
+}
+
+.card {
     background-color: white;
 }
 
-.card-title{
-    color:var(--Very-Dark-Grayish-Blue);
-    font-size: 1.2rem;
-    font-weight: 700;
+.card-title {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 1.1rem;
+    line-height: 1.7rem;
 }
+
+.profile-share-button-background{
+    border-radius: 50%;
+    height: 40px;
+    width:40px;
+    background-color: var(--Light-Grayish-Blue);
+
+  
+}
+
+.profile-share-button{
+   width:20px;
+   height:20px;
+   margin: 9px 10px;
+  
+}
+
+
+.socials{
+    display: none;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card {
+     width: 360px;
+     margin:5vh auto;
+     border-radius: 15px;
+     display: flex;
+     flex-direction: column;
+    }
+
+    .hero-img{
+        width: 360px;
+        height:auto;
+        border-radius: 15px 15px 0 0 ;
+    }
+
+    .card-content-section{
+        padding:30px;
+    }
+
+    .card-title {
+        margin-bottom:10px;
+    }
+
+    .card-text {
+        margin-bottom:20px;
+    }
+
+    .card-profile-section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .profile-image{
+        width:50px;
+        height:auto;
+        border-radius: 50%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
