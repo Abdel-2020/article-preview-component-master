@@ -82,6 +82,7 @@ p {
      border-radius: 15px;
      display: flex;
      flex-direction: column;
+
     }
 
     .hero-img{
@@ -99,7 +100,7 @@ p {
     }
 
     .card-text {
-        margin-bottom:20px;
+        margin-bottom:30px;
     }
 
     .card-profile-section{
