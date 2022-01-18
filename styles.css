@@ -22,7 +22,7 @@
 
 body {
     background-color: var(--Light-Grayish-Blue);
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope";
 }
 
 .profile-name {
@@ -56,24 +56,51 @@ p {
 
 .profile-share-button-background{
     border-radius: 50%;
-    height: 40px;
-    width:40px;
+    height: 30px;
+    width:30px;
     background-color: var(--Light-Grayish-Blue);
-
-  
 }
 
 .profile-share-button{
-   width:20px;
-   height:20px;
-   margin: 9px 10px;
-  
+    width:15px;
+    height:15px;
+    margin: 7px 7px;
+   
+ }
+
+ .socials{
+    position: absolute;
+    width:100%;
+    right:0px;
+    bottom:0px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    padding:10px;
+    }
+
+.socials-active{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.active-button-background{
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+.active-button{
+    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
 }
 
 
-.socials{
-    display: none;
-}
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .card {
@@ -82,7 +109,7 @@ p {
      border-radius: 15px;
      display: flex;
      flex-direction: column;
-
+     filter: drop-shadow(0px 5px 20px var(--Desaturated-Dark-Blue));
     }
 
     .hero-img{
@@ -107,6 +134,7 @@ p {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        display: none;
     }
 
     .profile-image{
@@ -128,3 +156,5 @@ p {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
+
+
