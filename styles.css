@@ -83,6 +83,10 @@ p {
     padding:10px;
     }
 
+    .socials-icon{
+        margin:0 5px;
+    }
+
 .socials-active{
     letter-spacing: 3px;
     text-transform: uppercase;
