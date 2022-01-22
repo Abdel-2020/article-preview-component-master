@@ -157,20 +157,98 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    ...
+    .card {
+        width: 700px;
+        margin: 5vh auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        filter: drop-shadow(0px 20px 20px var(--Desaturated-Dark-Blue));
+    }
+
+    .hero-img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 590px;
+        object-fit: cover;
+        object-position: 0 -20px;
+
+    }
+
+    .card-content-section {
+
+        padding: 40px 60px 40px;
+        margin: 0 auto;
+    }
+
+    .card-title {
+        margin-bottom: 15px;
+    }
+
+    .card-text {
+        margin-bottom: 60px;
+    }
+
+    .card-profile-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 50px;
+        height: auto;
+        border-radius: 50%;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    ...
-}
+    .card {
+        width: 750px;
+        height: 300px;
+        margin: 20vh auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        filter: drop-shadow(0px 20px 20px var(--Desaturated-Dark-Blue));
+    }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    ...
-}
+    .card-title {
+        color: var(--Very-Dark-Grayish-Blue);
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        margin-bottom: 15px;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    ...
+
+    .hero-img {
+        border-radius: 10px 0px 0 10px;
+        width: 300px;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0px 0px;
+    }
+
+    .card-content-section {
+        padding: 30px 35px;
+        margin: 0 auto;
+    }
+
+    .card-text {
+        margin-bottom: 45px;
+    }
+
+    .card-profile-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 50px;
+        height: auto;
+        border-radius: 50%;
+    }
 }
